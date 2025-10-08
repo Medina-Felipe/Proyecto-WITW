@@ -3,21 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Página de Actividades</title>
-  <!-- Tailwind via CDN -->
+  <title>Pagina de Actividades</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Tus estilos extra -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-gray-100">
 
-  <!-- Barra de navegación -->
+  <!-- Barra de navegacion -->
 <nav class="bg-white shadow fixed w-full top-0 left-0 z-50">
   <div class="max-w-7xl mx-auto px-4 flex justify-between items-center h-16">
-    <!-- Título de la web -->
     <div class="text-xl font-bold text-gray-700">WITW</div>
 
-    <!-- Botones de navegación -->
+    <!-- Botones de navegacion -->
     <div class="hidden md:flex space-x-6">
       <button class="nav-btn text-gray-600 hover:text-gray-900" data-section="inicio">Inicio</button>
       <button class="nav-btn text-gray-600 hover:text-gray-900" data-section="add">Añadir actividad</button>
@@ -26,7 +23,7 @@
       <a href="register.html" class="text-gray-600 hover:text-gray-900">Registrarse</a>
     </div>
 
-    <!-- Menú de perfil -->
+    <!-- Menu de perfil -->
     <div class="relative">
       <button id="profileBtn" class="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center">
         <svg class="w-6 h-6 text-gray-700" fill="currentColor" viewBox="0 0 24 24">
@@ -59,7 +56,6 @@
         </div>
         <div class="flex-1">
           <label class="block text-gray-700">Subir foto</label>
-          <!-- input oculto activado por label -->
           <input id="avatarInput" type="file" accept="image/*" class="hidden" />
           <label for="avatarInput" id="avatarButton" class="inline-flex items-center px-3 py-2 bg-white border rounded cursor-pointer shadow-sm hover:bg-gray-50">
             <svg class="w-5 h-5 mr-2 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V7M16 3l-4 4-4-4"></path></svg>
@@ -136,12 +132,11 @@
     </form>
   </section>
 
-  <!-- 🔹 NUEVA SECCIÓN MAPA -->
+  <!--NUEVA SECCI0N MAPA -->
   <section id="mapa" class="section hidden pt-20 px-4 max-w-7xl mx-auto">
     <h1 class="text-2xl font-bold mb-4">Mapa de Eventos</h1>
 
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
-      <!-- Sidebar -->
       <aside class="bg-white p-4 rounded shadow space-y-4">
         <h3 class="font-semibold">Buscar y filtrar</h3>
         <label class="block">
@@ -202,8 +197,3 @@
       </section>
     </div>
   </section>
-
-  <!-- Tu JS -->
-  <script src="app.js"></script>
-</body>
-</html>
