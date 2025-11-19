@@ -18,7 +18,7 @@ class AuthControllerTest {
     private AuthService authService;
 
     @Test
-    void login_shouldReturnAuthResponse() throws Exception {
+    void login-shouldReturnAuthResponse() throws Exception {
         LoginRequest request = new LoginRequest("example@gmail.com", "password");
         AuthResponse response = new AuthResponse("token123");
 
