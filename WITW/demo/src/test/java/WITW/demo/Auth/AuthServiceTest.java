@@ -1,3 +1,5 @@
+package WITW.demo.Auth;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.verify;
@@ -17,7 +19,7 @@ import WITW.demo.User.Role;
 import WITW.demo.User.User;
 import WITW.demo.User.UserRepository;
 
-package WITW.demo.Auth;
+
 
 
 
@@ -92,4 +94,5 @@ class AuthServiceTest {
         field.setAccessible(true);
         field.set(mock, value);
     }
+
 }
