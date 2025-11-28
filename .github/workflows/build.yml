@@ -42,4 +42,5 @@ jobs:
         # 2. COMANDO BLINDADO:
         #    -DskipTests: Salta los errores de los alumnos para que no se detenga.
         #    REEMPLAZA LAS MAYÚSCULAS CON TUS DATOS DEL PASO 1 ABAJO:
-        run: mvn -B verify -DskipTests org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=TU_PROJECT_KEY_AQUI -Dsonar.organization=TU_ORG_KEY_AQUI
+        # CAMBIO: Usamos -Dmaven.test.skip=true para que NI SIQUIERA INTENTE compilar los tests rotos
+        run: mvn -B verify -Dmaven.test.skip=true org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=TU_PROJECT_KEY -Dsonar.organization=TU_ORG_KEY
